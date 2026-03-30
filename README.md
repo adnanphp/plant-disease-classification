@@ -75,9 +75,9 @@ The project includes:
 
 ---
 
-## 🔬 Feature Space Visualization (t-SNE)
+## 🔬 MobileNetV2 Training Curve
 
-### 🔹 ResNet-18 Embeddings
+### 🔹 MobileNetV2 Training Curve
 
 ![TSNE](figures/resnet18_tsne.png)
 
