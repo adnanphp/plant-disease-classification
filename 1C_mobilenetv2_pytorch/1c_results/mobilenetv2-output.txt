@@ -1,0 +1,156 @@
+python3 ac_mobilenetv2_pytorch.py
+2026-03-25 20:14:39,222 - INFO: Using device: cpu
+2026-03-25 20:14:39,223 - INFO: Loading preprocessed dataset...
+2026-03-25 20:14:39,718 - INFO: Loaded dataset with 39 classes
+2026-03-25 20:14:39,718 - INFO: Training samples: 27986
+2026-03-25 20:14:39,718 - INFO: Validation samples: 5997
+2026-03-25 20:14:39,718 - INFO: Test samples: 5998
+2026-03-25 20:14:39,718 - INFO: Initialized MobileNetV2 trainer with output path: mobilenetv2_results
+2026-03-25 20:14:39,718 - INFO: Using device: cpu
+2026-03-25 20:14:39,718 - INFO: ================================================================================
+2026-03-25 20:14:39,718 - INFO: STARTING MOBILENETV2 TRAINING ON FULL DATASET (PYTORCH)
+2026-03-25 20:14:39,718 - INFO: ================================================================================
+
+[Step 1] Creating data loaders...
+2026-03-25 20:14:39,719 - INFO: Data loaders created successfully
+2026-03-25 20:14:39,719 - INFO:   - Train batches: 875
+2026-03-25 20:14:39,719 - INFO:   - Validation batches: 188
+2026-03-25 20:14:39,719 - INFO:   - Test batches: 188
+2026-03-25 20:14:39,719 - INFO:   - Batch size: 32
+
+[Step 2] Training MobileNetV2 on full dataset...
+2026-03-25 20:14:39,719 - INFO: ============================================================
+2026-03-25 20:14:39,719 - INFO: Training MobileNetV2 on full PlantVillage dataset (PyTorch)
+2026-03-25 20:14:39,719 - INFO: ============================================================
+2026-03-25 20:14:39,719 - INFO: Data loaders created successfully
+2026-03-25 20:14:39,719 - INFO:   - Train batches: 875
+2026-03-25 20:14:39,719 - INFO:   - Validation batches: 188
+2026-03-25 20:14:39,719 - INFO:   - Test batches: 188
+2026-03-25 20:14:39,719 - INFO:   - Batch size: 32
+2026-03-25 20:14:39,719 - INFO: Building MobileNetV2 architecture...
+2026-03-25 20:14:39,789 - INFO: Model parameters: {'trainable': 2.273831, 'total': 2.273831}
+2026-03-25 20:14:39,789 - INFO:   - Trainable: 2.27M
+2026-03-25 20:14:39,789 - INFO:   - Total: 2.27M
+2026-03-25 20:14:39,793 - INFO: Starting training...
+2026-03-25 20:14:39,793 - INFO: 
+Epoch 1/15
+2026-03-25 21:00:12,223 - INFO: Train Loss: 1.9084, Train Acc: 46.40%                                                                                                                         
+2026-03-25 21:00:12,223 - INFO: Val Loss: 1.5670, Val Acc: 56.75%
+2026-03-25 21:00:12,223 - INFO: Learning Rate: 0.001000
+2026-03-25 21:00:12,252 - INFO: ✓ New best model saved! (Val Acc: 56.75%)
+2026-03-25 21:00:12,252 - INFO: 
+Epoch 2/15
+2026-03-25 21:45:58,935 - INFO: Train Loss: 0.7955, Train Acc: 75.07%                                                                                                                         
+2026-03-25 21:45:58,936 - INFO: Val Loss: 0.4666, Val Acc: 84.73%
+2026-03-25 21:45:58,936 - INFO: Learning Rate: 0.001000
+2026-03-25 21:45:58,966 - INFO: ✓ New best model saved! (Val Acc: 84.73%)
+2026-03-25 21:45:58,966 - INFO: 
+Epoch 3/15
+2026-03-25 22:31:42,986 - INFO: Train Loss: 0.5179, Train Acc: 83.49%                                                                                                                         
+2026-03-25 22:31:42,987 - INFO: Val Loss: 0.5602, Val Acc: 82.32%
+2026-03-25 22:31:42,987 - INFO: Learning Rate: 0.001000
+2026-03-25 22:31:42,987 - INFO: 
+Epoch 4/15
+2026-03-25 23:17:41,379 - INFO: Train Loss: 0.3937, Train Acc: 87.13%                                                                                                                         
+2026-03-25 23:17:41,381 - INFO: Val Loss: 0.4677, Val Acc: 85.16%
+2026-03-25 23:17:41,381 - INFO: Learning Rate: 0.001000
+2026-03-25 23:17:41,417 - INFO: ✓ New best model saved! (Val Acc: 85.16%)
+2026-03-25 23:17:41,417 - INFO: 
+Epoch 5/15
+2026-03-26 00:03:20,967 - INFO: Train Loss: 0.3277, Train Acc: 89.34%                                                                                                                         
+2026-03-26 00:03:20,968 - INFO: Val Loss: 0.2535, Val Acc: 91.90%
+2026-03-26 00:03:20,968 - INFO: Learning Rate: 0.001000
+2026-03-26 00:03:20,997 - INFO: ✓ New best model saved! (Val Acc: 91.90%)
+2026-03-26 00:03:20,997 - INFO: 
+Epoch 6/15
+2026-03-26 00:49:16,638 - INFO: Train Loss: 0.2712, Train Acc: 91.04%                                                                                                                         
+2026-03-26 00:49:16,638 - INFO: Val Loss: 0.1805, Val Acc: 94.20%
+2026-03-26 00:49:16,638 - INFO: Learning Rate: 0.001000
+2026-03-26 00:49:16,666 - INFO: ✓ New best model saved! (Val Acc: 94.20%)
+2026-03-26 00:49:16,666 - INFO: 
+Epoch 7/15
+2026-03-26 01:34:55,785 - INFO: Train Loss: 0.2337, Train Acc: 92.29%                                                                                                                         
+2026-03-26 01:34:55,785 - INFO: Val Loss: 0.2429, Val Acc: 92.16%
+2026-03-26 01:34:55,785 - INFO: Learning Rate: 0.001000
+2026-03-26 01:34:55,785 - INFO: 
+Epoch 8/15
+2026-03-26 02:20:46,270 - INFO: Train Loss: 0.2008, Train Acc: 93.40%                                                                                                                         
+2026-03-26 02:20:46,270 - INFO: Val Loss: 0.2515, Val Acc: 92.50%
+2026-03-26 02:20:46,270 - INFO: Learning Rate: 0.001000
+2026-03-26 02:20:46,270 - INFO: 
+Epoch 9/15
+2026-03-26 03:06:28,301 - INFO: Train Loss: 0.1914, Train Acc: 93.77%                                                                                                                         
+2026-03-26 03:06:28,302 - INFO: Val Loss: 0.1558, Val Acc: 95.15%
+2026-03-26 03:06:28,302 - INFO: Learning Rate: 0.001000
+2026-03-26 03:06:28,324 - INFO: ✓ New best model saved! (Val Acc: 95.15%)
+2026-03-26 03:06:28,325 - INFO: 
+Epoch 10/15
+2026-03-26 03:52:28,689 - INFO: Train Loss: 0.1689, Train Acc: 94.33%                                                                                                                         
+2026-03-26 03:52:28,689 - INFO: Val Loss: 0.1019, Val Acc: 96.77%
+2026-03-26 03:52:28,689 - INFO: Learning Rate: 0.001000
+2026-03-26 03:52:28,716 - INFO: ✓ New best model saved! (Val Acc: 96.77%)
+2026-03-26 03:52:28,716 - INFO: 
+Epoch 11/15
+2026-03-26 04:38:10,325 - INFO: Train Loss: 0.1522, Train Acc: 94.87%                                                                                                                         
+2026-03-26 04:38:10,325 - INFO: Val Loss: 0.1379, Val Acc: 95.55%
+2026-03-26 04:38:10,325 - INFO: Learning Rate: 0.001000
+2026-03-26 04:38:10,325 - INFO: 
+Epoch 12/15
+2026-03-26 05:24:03,445 - INFO: Train Loss: 0.1436, Train Acc: 95.12%                                                                                                                         
+2026-03-26 05:24:03,445 - INFO: Val Loss: 0.1159, Val Acc: 96.40%
+2026-03-26 05:24:03,445 - INFO: Learning Rate: 0.001000
+2026-03-26 05:24:03,445 - INFO: 
+Epoch 13/15
+2026-03-26 06:09:46,164 - INFO: Train Loss: 0.1334, Train Acc: 95.58%                                                                                                                         
+2026-03-26 06:09:46,165 - INFO: Val Loss: 0.1654, Val Acc: 94.43%
+2026-03-26 06:09:46,165 - INFO: Learning Rate: 0.001000
+2026-03-26 06:09:46,165 - INFO: 
+Epoch 14/15
+2026-03-26 06:55:35,911 - INFO: Train Loss: 0.1212, Train Acc: 96.01%                                                                                                                         
+2026-03-26 06:55:35,911 - INFO: Val Loss: 0.0887, Val Acc: 96.83%
+2026-03-26 06:55:35,911 - INFO: Learning Rate: 0.001000
+2026-03-26 06:55:35,934 - INFO: ✓ New best model saved! (Val Acc: 96.83%)
+2026-03-26 06:55:35,934 - INFO: 
+Epoch 15/15
+2026-03-26 07:41:17,608 - INFO: Train Loss: 0.1114, Train Acc: 96.38%                                                                                                                         
+2026-03-26 07:41:17,608 - INFO: Val Loss: 0.1273, Val Acc: 96.16%
+2026-03-26 07:41:17,608 - INFO: Learning Rate: 0.001000
+2026-03-26 07:41:17,608 - INFO: Training completed in 686.63 minutes
+2026-03-26 07:41:17,670 - INFO: Evaluating model on test set...
+Evaluating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 188/188 [03:01<00:00,  1.04it/s]
+2026-03-26 07:44:18,897 - INFO: Test Accuracy: 0.9723
+2026-03-26 07:44:18,897 - INFO: Precision (macro): 0.9694
+2026-03-26 07:44:18,897 - INFO: Recall (macro): 0.9538
+2026-03-26 07:44:18,897 - INFO: F1-Score (macro): 0.9570
+2026-03-26 07:44:20,716 - INFO: Best validation accuracy: 96.83% at epoch 14
+2026-03-26 07:44:20,716 - INFO: Generating t-SNE feature visualization...
+2026-03-26 07:44:58,440 - INFO: t-SNE visualization saved                                                                                                                                     
+2026-03-26 07:44:58,442 - INFO: ✓ MobileNetV2 training complete!
+
+[Step 3] Generating final report...
+2026-03-26 07:44:58,449 - INFO: Generating final report...
+2026-03-26 07:44:58,450 - INFO: Creating results summary plot...
+2026-03-26 07:45:00,338 - INFO: Results summary saved to mobilenetv2_results/figures/mobilenetv2_results_summary.png
+2026-03-26 07:45:00,339 - INFO: Report saved to mobilenetv2_results/results/final_report.md
+
+================================================================================
+MOBILENETV2 TRAINING COMPLETE!
+================================================================================
+Test Accuracy: 0.9723 (97.23%)
+Best Validation Accuracy: 96.83%
+Training Time: 686.63 minutes
+Total Parameters: 2.27M
+Device Used: cpu
+
+Results saved to: mobilenetv2_results/results
+Model saved to: mobilenetv2_results/models
+Figures saved to: mobilenetv2_results/figures
+================================================================================
+2026-03-26 07:45:00,339 - INFO: ================================================================================
+2026-03-26 07:45:00,339 - INFO: MOBILENETV2 TRAINING FINISHED SUCCESSFULLY!
+2026-03-26 07:45:00,339 - INFO: ================================================================================
+
+================================================================================
+EXECUTION COMPLETE!
+All results saved to: mobilenetv2_results
+================================================================================

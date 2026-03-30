@@ -1,0 +1,96 @@
+python3 ada_resnet50_tl_fine_tune_only.py
+Using device: cpu
+================================================================================
+FINE-TUNING RESNET50 FOR 3 EPOCHS
+================================================================================
+
+[Step 1] Loading data...
+✓ Loaded 39 classes
+✓ Training samples: 27986
+✓ Validation samples: 5997
+
+[Step 2] Creating data loaders...
+✓ Train batches: 875
+✓ Validation batches: 188
+
+[Step 3] Loading initial model...
+✓ Loaded initial model (val_acc: 95.1308987827247)
+
+[Step 4] Setting up fine-tuning...
+✓ Unfroze last 50 layers
+✓ Trainable parameters: 24.70M
+
+[Step 5] Starting fine-tuning...
+  - Epochs: 3
+  - Learning rate: 1e-06
+============================================================
+
+Epoch 1/3
+Train Loss: 0.3674, Train Acc: 92.86%                                                                                                                                                         
+Val Loss: 0.2288, Val Acc: 95.95%
+Learning Rate: 0.000001
+✓ New best model saved! (Val Acc: 95.95%)
+
+Epoch 2/3
+Train Loss: 0.3284, Train Acc: 93.88%                                                                                                                                                         
+Val Loss: 0.2045, Val Acc: 96.46%
+Learning Rate: 0.000001
+✓ New best model saved! (Val Acc: 96.46%)
+
+Epoch 3/3
+Train Loss: 0.2951, Train Acc: 94.70%                                                                                                                                                         
+Val Loss: 0.1861, Val Acc: 96.68%
+Learning Rate: 0.000001
+✓ New best model saved! (Val Acc: 96.68%)
+
+✓ Fine-tuning completed in 311.37 minutes
+✓ Best validation accuracy: 96.68%
+✓ Training history saved
+
+[Step 6] Plotting training history...
+✓ Training history plot saved to transfer_learning_results/figures/training_history_finetune.png
+
+[Step 7] Evaluating on test set...
+Evaluating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 188/188 [07:02<00:00,  2.25s/it]
+
+============================================================
+FINE-TUNED MODEL TEST RESULTS
+============================================================
+Test Accuracy: 0.9658 (96.58%)
+Macro Precision: 0.9410
+Macro Recall: 0.9217
+Macro F1-Score: 0.9286
+✓ Results saved to transfer_learning_results/results/resnet50_transfer_finetuned_results.json
+
+[Step 8] Plotting confusion matrix...
+✓ Confusion matrix saved to transfer_learning_results/figures/confusion_matrix_resnet50_finetuned.png
+
+[Step 9] Generating t-SNE visualization...
+✓ t-SNE visualization saved to transfer_learning_results/figures/tsne_visualization_resnet50_finetuned.png
+
+[Step 10] Loading initial results for comparison...
+✓ Loaded initial results (test acc: 0.9448)
+
+
+
+python3 ada_z_generate_finetune_report_only.py
+================================================================================
+GENERATING FINETUNE REPORT FROM SAVED RESULTS
+================================================================================
+✓ Loaded fine-tuned results (test acc: 0.9658)
+✓ Loaded fine-tune history (3 epochs)
+✓ Loaded initial results (test acc: 0.9448)
+✓ Number of classes: 39
+
+[Step] Generating markdown report...
+✓ Report saved to transfer_learning_results/results/finetuning_report.md
+
+================================================================================
+REPORT GENERATION COMPLETE!
+================================================================================
+
+Test Accuracy: 0.9658 (96.58%)
+Improvement: +2.10%
+
+Report: transfer_learning_results/results/finetuning_report.md
+================================================================================

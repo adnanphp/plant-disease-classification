@@ -1,0 +1,140 @@
+ python3 ab_resnet18_pytorch.py
+2026-03-24 00:08:41,079 - INFO: Using device: cpu
+2026-03-24 00:08:41,079 - INFO: Loading preprocessed dataset...
+2026-03-24 00:08:41,403 - INFO: Loaded dataset with 39 classes
+2026-03-24 00:08:41,403 - INFO: Training samples: 27986
+2026-03-24 00:08:41,403 - INFO: Validation samples: 5997
+2026-03-24 00:08:41,403 - INFO: Test samples: 5998
+2026-03-24 00:08:41,403 - INFO: Initialized ResNet-18 trainer with output path: resnet18_results
+2026-03-24 00:08:41,404 - INFO: Using device: cpu
+2026-03-24 00:08:41,404 - INFO: ============================================================
+2026-03-24 00:08:41,404 - INFO: Training ResNet-18 on full PlantVillage dataset (PyTorch)
+2026-03-24 00:08:41,404 - INFO: ============================================================
+2026-03-24 00:08:41,404 - INFO: Data loaders created successfully
+2026-03-24 00:08:41,404 - INFO:   - Train batches: 875
+2026-03-24 00:08:41,404 - INFO:   - Validation batches: 188
+2026-03-24 00:08:41,404 - INFO:   - Test batches: 188
+2026-03-24 00:08:41,404 - INFO:   - Batch size: 32
+2026-03-24 00:08:41,404 - INFO: Building ResNet-18 architecture...
+2026-03-24 00:08:41,488 - INFO: Model parameters: {'trainable': 11.196519, 'total': 11.196519}
+2026-03-24 00:08:41,488 - INFO:   - Trainable: 11.20M
+2026-03-24 00:08:41,488 - INFO:   - Total: 11.20M
+2026-03-24 00:08:41,489 - INFO: Starting training...
+2026-03-24 00:08:41,489 - INFO: 
+Epoch 1/15
+2026-03-24 00:40:53,362 - INFO: Train Loss: 1.5734, Train Acc: 54.27%                                                                                                                         
+2026-03-24 00:40:53,362 - INFO: Val Loss: 1.1893, Val Acc: 64.50%
+2026-03-24 00:40:53,362 - INFO: Learning Rate: 0.001000
+2026-03-24 00:40:53,414 - INFO: ✓ New best model saved! (Val Acc: 64.50%)
+2026-03-24 00:40:53,414 - INFO: 
+Epoch 2/15
+2026-03-24 01:13:13,622 - INFO: Train Loss: 0.7532, Train Acc: 76.51%                                                                                                                         
+2026-03-24 01:13:13,622 - INFO: Val Loss: 0.5570, Val Acc: 81.99%
+2026-03-24 01:13:13,622 - INFO: Learning Rate: 0.001000
+2026-03-24 01:13:13,705 - INFO: ✓ New best model saved! (Val Acc: 81.99%)
+2026-03-24 01:13:13,705 - INFO: 
+Epoch 3/15
+2026-03-24 01:45:15,279 - INFO: Train Loss: 0.4786, Train Acc: 84.69%                                                                                                                         
+2026-03-24 01:45:15,280 - INFO: Val Loss: 0.3880, Val Acc: 86.63%
+2026-03-24 01:45:15,280 - INFO: Learning Rate: 0.001000
+2026-03-24 01:45:15,371 - INFO: ✓ New best model saved! (Val Acc: 86.63%)
+2026-03-24 01:45:15,371 - INFO: 
+Epoch 4/15
+2026-03-24 02:20:36,111 - INFO: Train Loss: 0.3443, Train Acc: 88.74%                                                                                                                         
+2026-03-24 02:20:36,111 - INFO: Val Loss: 0.2343, Val Acc: 92.00%
+2026-03-24 02:20:36,111 - INFO: Learning Rate: 0.001000
+2026-03-24 02:20:36,199 - INFO: ✓ New best model saved! (Val Acc: 92.00%)
+2026-03-24 02:20:36,199 - INFO: 
+Epoch 5/15
+2026-03-24 02:52:58,182 - INFO: Train Loss: 0.2821, Train Acc: 90.74%                                                                                                                         
+2026-03-24 02:52:58,182 - INFO: Val Loss: 0.2291, Val Acc: 92.45%
+2026-03-24 02:52:58,182 - INFO: Learning Rate: 0.001000
+2026-03-24 02:52:58,272 - INFO: ✓ New best model saved! (Val Acc: 92.45%)
+2026-03-24 02:52:58,273 - INFO: 
+Epoch 6/15
+2026-03-24 03:25:17,256 - INFO: Train Loss: 0.2320, Train Acc: 92.26%                                                                                                                         
+2026-03-24 03:25:17,256 - INFO: Val Loss: 0.1753, Val Acc: 94.33%
+2026-03-24 03:25:17,256 - INFO: Learning Rate: 0.001000
+2026-03-24 03:25:17,339 - INFO: ✓ New best model saved! (Val Acc: 94.33%)
+2026-03-24 03:25:17,339 - INFO: 
+Epoch 7/15
+2026-03-24 03:57:38,448 - INFO: Train Loss: 0.2029, Train Acc: 93.22%                                                                                                                         
+2026-03-24 03:57:38,448 - INFO: Val Loss: 0.1806, Val Acc: 94.01%
+2026-03-24 03:57:38,449 - INFO: Learning Rate: 0.001000
+2026-03-24 03:57:38,449 - INFO: 
+Epoch 8/15
+2026-03-24 04:29:52,602 - INFO: Train Loss: 0.1783, Train Acc: 93.94%                                                                                                                         
+2026-03-24 04:29:52,602 - INFO: Val Loss: 0.2289, Val Acc: 92.81%
+2026-03-24 04:29:52,602 - INFO: Learning Rate: 0.001000
+2026-03-24 04:29:52,602 - INFO: 
+Epoch 9/15
+2026-03-24 05:02:06,899 - INFO: Train Loss: 0.1519, Train Acc: 94.94%                                                                                                                         
+2026-03-24 05:02:06,899 - INFO: Val Loss: 0.2206, Val Acc: 93.20%
+2026-03-24 05:02:06,899 - INFO: Learning Rate: 0.001000
+2026-03-24 05:02:06,899 - INFO: 
+Epoch 10/15
+2026-03-24 05:34:45,215 - INFO: Train Loss: 0.1368, Train Acc: 95.40%                                                                                                                         
+2026-03-24 05:34:45,215 - INFO: Val Loss: 0.1845, Val Acc: 94.15%
+2026-03-24 05:34:45,215 - INFO: Learning Rate: 0.001000
+2026-03-24 05:34:45,215 - INFO: 
+Epoch 11/15
+2026-03-24 06:06:59,544 - INFO: Train Loss: 0.1249, Train Acc: 95.77%                                                                                                                         
+2026-03-24 06:06:59,545 - INFO: Val Loss: 0.1381, Val Acc: 95.33%
+2026-03-24 06:06:59,545 - INFO: Learning Rate: 0.001000
+2026-03-24 06:06:59,616 - INFO: ✓ New best model saved! (Val Acc: 95.33%)
+2026-03-24 06:06:59,616 - INFO: 
+Epoch 12/15
+2026-03-24 06:39:20,180 - INFO: Train Loss: 0.1132, Train Acc: 96.16%                                                                                                                         
+2026-03-24 06:39:20,181 - INFO: Val Loss: 0.1528, Val Acc: 95.06%
+2026-03-24 06:39:20,181 - INFO: Learning Rate: 0.001000
+2026-03-24 06:39:20,181 - INFO: 
+Epoch 13/15
+2026-03-24 07:13:41,601 - INFO: Train Loss: 0.1018, Train Acc: 96.53%                                                                                                                         
+2026-03-24 07:13:41,601 - INFO: Val Loss: 0.1439, Val Acc: 95.51%
+2026-03-24 07:13:41,601 - INFO: Learning Rate: 0.001000
+2026-03-24 07:13:41,693 - INFO: ✓ New best model saved! (Val Acc: 95.51%)
+2026-03-24 07:13:41,693 - INFO: 
+Epoch 14/15
+2026-03-24 07:45:49,717 - INFO: Train Loss: 0.0859, Train Acc: 97.25%                                                                                                                         
+2026-03-24 07:45:49,718 - INFO: Val Loss: 0.0915, Val Acc: 97.00%
+2026-03-24 07:45:49,718 - INFO: Learning Rate: 0.001000
+2026-03-24 07:45:49,792 - INFO: ✓ New best model saved! (Val Acc: 97.00%)
+2026-03-24 07:45:49,792 - INFO: 
+Epoch 15/15
+2026-03-24 08:17:56,341 - INFO: Train Loss: 0.0912, Train Acc: 96.83%                                                                                                                         
+2026-03-24 08:17:56,342 - INFO: Val Loss: 0.1636, Val Acc: 95.25%
+2026-03-24 08:17:56,342 - INFO: Learning Rate: 0.001000
+2026-03-24 08:17:56,342 - INFO: Training completed in 489.25 minutes
+2026-03-24 08:17:56,383 - INFO: Evaluating model on test set...
+Evaluating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 188/188 [02:16<00:00,  1.38it/s]
+2026-03-24 08:20:12,942 - INFO: Test Accuracy: 0.9715
+2026-03-24 08:20:12,942 - INFO: Precision (macro): 0.9648
+2026-03-24 08:20:12,942 - INFO: Recall (macro): 0.9636
+2026-03-24 08:20:12,942 - INFO: F1-Score (macro): 0.9636
+2026-03-24 08:20:14,632 - INFO: Best validation accuracy: 97.00% at epoch 14
+2026-03-24 08:20:14,632 - INFO: Generating t-SNE feature visualization...
+2026-03-24 08:20:40,830 - INFO: t-SNE visualization saved                                                                                                                                     
+2026-03-24 08:20:40,833 - INFO: ✓ ResNet-18 training complete!
+2026-03-24 08:20:40,839 - INFO: Generating final report...
+2026-03-24 08:20:40,839 - INFO: Creating results summary plot...
+2026-03-24 08:20:41,226 - INFO: Results summary saved to resnet18_results/figures/resnet18_results_summary.png
+2026-03-24 08:20:41,227 - INFO: Report saved to resnet18_results/results/final_report.md
+
+================================================================================
+RESNET-18 TRAINING COMPLETE!
+================================================================================
+Test Accuracy: 0.9715 (97.15%)
+Best Validation Accuracy: 97.00%
+Training Time: 489.25 minutes
+Total Parameters: 11.20M
+Device Used: cpu
+
+Results saved to: resnet18_results/results
+Model saved to: resnet18_results/models
+Figures saved to: resnet18_results/figures
+================================================================================
+
+================================================================================
+EXECUTION COMPLETE!
+All results saved to: resnet18_results
+================================================================================

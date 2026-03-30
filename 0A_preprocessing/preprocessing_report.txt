@@ -1,0 +1,58 @@
+================================================================================
+PLANTVILLAGE DATASET PREPROCESSING REPORT
+================================================================================
+
+Reference: Hughes & Salathe, 2015 - arXiv:1511.08060
+
+Report Generated: 2026-02-18 14:37:37.800971
+
+========================================
+DATASET OVERVIEW
+========================================
+Total Classes (Original): 39
+Total Images (Original): 55,448
+
+STRATIFIED SAMPLING (Target: 40,000)
+========================================
+Final Sampled Size: 39,981
+Classes Preserved: 39
+
+Distribution Statistics:
+  Original - Mean: 1421.7, Std: 1239.5
+  Sampled  - Mean: 1025.2, Std: 894.1
+
+========================================
+IMAGE PROPERTIES (Sample Analysis)
+========================================
+
+Dimensions:
+  Width range: 256 - 256 px (mean: 256.0)
+  Height range: 192 - 256 px (mean: 254.1)
+
+File Sizes:
+  Range: 4.7 - 26.5 KB
+  Mean: 15.1 KB
+  Std: 4.5 KB
+
+Image Formats:
+  .jpg: 500 (100.0%)
+
+========================================
+DATASET SPLIT (70/15/15)
+========================================
+  Train: 27986 images (70.0%)
+  Validation: 5997 images (15.0%)
+  Test: 5998 images (15.0%)
+
+========================================
+PREPROCESSING RECOMMENDATIONS
+========================================
+
+Based on the analysis, we recommend:
+1. Target Size: 224x224 (standard for most CNNs)
+2. Normalization: [0,1] or [-1,1] range
+3. Data Augmentation:
+   - Random horizontal flips
+   - Random rotations (±15°)
+   - Random brightness/contrast adjustments
+4. Use stratified 70/15/15 split as created
